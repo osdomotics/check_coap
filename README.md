@@ -9,15 +9,15 @@ apt-get install libnagios-plugin-perl libnetaddr-ip-perl
 check_coap needs coap-client tool
 install libcoap:
 
-  German instructions: http://osdwiki.open-entry.com/doku.php/de:ideen:firststepsmerkurboard#coap-client
+German instructions: http://osdwiki.open-entry.com/doku.php/de:ideen:firststepsmerkurboard#coap-client
 
-  wget http://downloads.sourceforge.net/project/libcoap/coap-18/libcoap-4.0.3.tar.gz
-  tar -xzf libcoap-4.0.3.tar.gz
-  cd libcoap-4.0.3
-  autoconf
-  ./configure
-  make
-  cp examples/coap-client /usr/local/bin/
+wget http://downloads.sourceforge.net/project/libcoap/coap-18/libcoap-4.0.3.tar.gz
+tar -xzf libcoap-4.0.3.tar.gz
+cd libcoap-4.0.3
+autoconf
+./configure
+make
+cp examples/coap-client /usr/local/bin/
 
 === check_coap_alive.pl ===
 
