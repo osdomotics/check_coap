@@ -43,3 +43,14 @@ Example:
 ./check_coap.pl -H [aaaa::221:2eff:ff00:1ef9] -u sensors/battery -w 2.100: -c 2.000: -D 100 -p
 
 COAP OK - sensors/battery is 24.5 | sensors/battery=24.5;2.100:;2.000:
+
+=== OMD ===
+
+If you are use OMD (Open Monitorin Distribution) copy the check_coap scripts to:
+
+/omd/sites/mysite/lib/nagios/plugins
+
+Copy the config scripts to
+/omd/sites/mysite/etc/nagios/conf.d
+
+
