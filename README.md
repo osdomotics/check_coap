@@ -54,3 +54,19 @@ Copy the config scripts to
 /omd/sites/mysite/etc/nagios/conf.d
 
 
+=== Install OMD Debian and Raspberry Pi ===
+
+Install GPG Key
+
+First step is to import the gpg key. This step has to be done only once.
+
+  gpg --keyserver keys.gnupg.net --recv-keys F8C1CA08A57B9ED7
+  gpg --armor --export F8C1CA08A57B9ED7 | apt-key add -
+
+  echo 'deb http://labs.consol.de/repo/stable/debian wheezy main' >> /etc/apt/sources.list
+  apt-get update
+  apt-get install omd
+
+Links:
+
+http://labs.consol.de/repo/stable/#_debian_wheezy_7_0
