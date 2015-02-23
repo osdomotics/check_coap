@@ -48,11 +48,11 @@ COAP OK - sensors/battery is 24.5 | sensors/battery=24.5;2.100:;2.000:
 
 Now create a monitoring instance (OMD calls this “site”):
 
-# omd create foo
+ omd create foo
 
 And let's start Nagios and all other processes:
 
-# omd start foo
+ omd start foo
 
 If you are use OMD (Open Monitorin Distribution) copy the check_coap scripts to:
 
