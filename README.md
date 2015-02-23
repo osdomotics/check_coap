@@ -46,7 +46,16 @@ COAP OK - sensors/battery is 24.5 | sensors/battery=24.5;2.100:;2.000:
 
 === OMD ===
 
+Now create a monitoring instance (OMD calls this “site”):
+
+# omd create foo
+
+And let's start Nagios and all other processes:
+
+# omd start foo
+
 If you are use OMD (Open Monitorin Distribution) copy the check_coap scripts to:
+
 
 /omd/sites/mysite/lib/nagios/plugins
 
@@ -66,6 +75,12 @@ First step is to import the gpg key. This step has to be done only once.
   echo 'deb http://labs.consol.de/repo/stable/debian wheezy main' >> /etc/apt/sources.list
   apt-get update
   apt-get install omd
+
+or over wget
+
+ wget https://labs.consol.de/repo/stable/debian/dists/wheezy/main/binary-armhf/omd-1.00_0.wheezy_armhf.deb
+ dpkg -i omd-1.00_0.wheezy_armhf.deb
+
 
 Links:
 
